@@ -10,6 +10,7 @@
 - 다양한 TFTP 오류 코드에 대한 오류 처리를 구현
 - 통신을 위해 UDP 소켓을 사용
 - 사용자가 서버 IP 주소, 포트, 작업 유형 (get/put) 및 파일 이름을 지정 가능
+- 기본 전송 모드는 `octet`
 
 ## 사용 방법
 ### 전제 조건
@@ -41,6 +42,13 @@ python tftp_client.py localhost get example.txt
 ```bash
 python tftp_client.py localhost put example.txt
 ```
+
+## OCCODE
+- 1: RRQ
+- 2: WRQ
+- 3: DATA
+- 4: ACK
+- 5: ERROR
 
 ## 오류 코드
 TFTP 클라이언트는 다음과 같은 오류 코드를 처리합니다:

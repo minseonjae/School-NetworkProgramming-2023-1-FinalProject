@@ -9,7 +9,6 @@ BLOCK_SIZE = 512
 TRANSFER_MODE = 'octet'
 OPCODE = {'RRQ': 1, 'WRQ': 2, 'DATA': 3, 'ACK': 4, 'ERROR': 5}
 OPCODE_RE = {1:'RRQ', 2:'WRQ', 3:'DATA', 4:'ACK', 5:'ERROR'}
-MODE = {'netascii': 1, 'octet': 2, 'mail': 3}
 ERROR_CODE = {0: "정의되지 않은 오류", 1: "파일을 찾을 수 없음", 2: "액세스 위반", 3: "디스크가 꽉 찼거나 할당이 초과됨", 4: "잘못된 TFTP 작업", 5: "알 수 없는 전송의 ID", 6: "파일이 이미 존재함", 7: "해당 사용자가 없음"}
 
 def send(filename, opcode, mode):
