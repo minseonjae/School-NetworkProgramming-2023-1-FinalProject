@@ -132,7 +132,7 @@ with open(filename, 'wb' if type == 1 else 'rb') as file:
                 if block_number < 1 or block_number == expected_block_number:
 
                     # 파일을 512바이트 만큼 불러와서 파일 블럭으로 변환
-                    file_block = file.read(512)
+                    file_block = file.read(BLOCK_SIZE)
 
                     # 파일을 읽어 왔는데 비어 있을 때
                     if not file_block:

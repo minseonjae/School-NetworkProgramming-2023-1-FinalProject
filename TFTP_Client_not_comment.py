@@ -78,7 +78,7 @@ with open(filename, 'wb' if type == 1 else 'rb') as file:
                     send_ACK(block_number, server_socket)
             elif type == 2 and opcode == OPCODE['ACK']:
                 if block_number < 1 or block_number == expected_block_number:
-                    file_block = file.read(512)
+                    file_block = file.read(BLOCK_SIZE)
                     if not file_block:
                         print("[END] 파일을 전부 보냈습니다.")
                         break
