@@ -22,7 +22,7 @@
 
 #### 명령어 구문
 ```bash
-python tftp_client.py <server_ip> <operation_type> <filename> [-p PORT]
+python TFTP_Client.py <server_ip> <operation_type> <filename> [-p PORT]
 ```
 
 #### 인수
@@ -35,12 +35,12 @@ python tftp_client.py <server_ip> <operation_type> <filename> [-p PORT]
 
 #### 파일 다운로드
 ```bash
-python tftp_client.py localhost get example.txt
+python TFTP_Client.py localhost get example.txt
 ```
 
 #### 파일 업로드
 ```bash
-python tftp_client.py localhost put example.txt
+python TFTP_Client.py localhost put example.txt
 ```
 
 ## OCCODE
