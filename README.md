@@ -17,7 +17,7 @@
 - Python 3.x
 
 ### 클라이언트 실행
-1. 저장소를 복제하거나 `tftp_client.py` 파일을 다운로드합니다.
+1. 저장소를 복제하거나 `TFTP_Client.py` 파일을 다운로드합니다.
 2. 터미널 창을 엽니다.
 
 #### 명령어 구문
@@ -29,7 +29,7 @@ python tftp_client.py <server_ip> <operation_type> <filename> [-p PORT]
 - `server_ip`: TFTP 서버 IP 주소
 - `operation_type`: `get` (서버에서 파일 다운로드) 또는 `put` (파일을 서버에 업로드) 중 하나를 지정
 - `filename`: 전송 파일 이름
-- `-p PORT`: (선택 사항) TFTP 서버 PORT 번호, 기본 포트는 69입니다. (선택 사항)
+- `-p (PORT)`: (선택 사항) TFTP 서버 PORT 번호, 기본 포트는 69입니다. (선택 사항)
 
 ### 예시
 
